@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/* CSS Document */
+
+DIV {
+  text-align: center;
+  width: 200px;
+  border:brown;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+body {font-family:verdana;
+}
+
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+
+.cc-footer:before {
+    content: "- Denne oppgaven er laget av Staale Bergersen. -";
+}
+
+.cc-footer:after {
+    content: "- Oppgaven er lisensiert under en Creative Commons Navngivelse - DelPåSammeVilkår 4.0 Internasjonal lisens. -";
+}
+
+.cc-footer {
+  content:"   ";
+  text-align: center;
+  background: orange;
+  position:absolute;
+  bottom:0;
+  height: 42px;
+  width: 100%;
+  font-size:small;
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.standard-footer{
+  content:" - Denne oppgaven er laget av Staale Bergersen. -  ";
+  text-align: center;
+  background: orange;
+  position:absolute;
+  bottom:0;
+  height: 42px;
+  width: 100%;
+  font-size:small;
+  display: table-cell;
+  vertical-align: bottom;
+
+}
