@@ -1,0 +1,71 @@
+/*  Kode hentet fra Informasjonsteknologi 2, Aschehoug Undervisning 
+	Modifisert av Håvard Solberg Nybøe  */
+
+body {
+    background-color: whitesmoke;
+    font-family: "Century Gothic", Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.innhold {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#neste-bilde {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%)
+}
+
+#forrige-bilde {
+    position: relative;
+    left: 45%;
+    transform: translate(-45%)
+}
+
+#bilder {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* knapper */
+input[type="button"],
+button {
+    font-family: inherit;
+    padding: 8px;
+    /* luft inni knappen */
+    color: black;
+    /* sort tekstfarge */
+    border: 1px solid rgba(120, 120, 120, 0.4);
+    /* lys grå kantlinje */
+    border-radius: 4px;
+    /* avrunder kantene */
+    background-color: #e7e7e7;
+    /* grå bakgrunnsfarge */
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+    /* skygge bak knappen */
+    outline: none;
+    /* fjerne ekstra kantlinje */
+    cursor: pointer;
+    /* gjør om musepekeren til en hånd */
+}
+
+input[type="button"]:hover,
+button:hover {
+    border: 1px solid #5196db;
+}
+
+input[type="button"]:active,
+button:active {
+    transform: translate(2px, 2px);
+    /* 1 px til høyre og 1 px ned */
+}
