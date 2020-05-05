@@ -5,13 +5,12 @@ window.onload = oppstart;
 function oppstart() {
 	document.getElementById("knappPutt").onclick = puttIListe;
 	document.getElementById("knappFjern").onclick = fjernFraListe;
-	document.getElementById("knappSkrivUt").onclick = skrivUtListe;
 	document.getElementById("knappReverser").onclick = reverserListe;
 	document.getElementById("knappSorter").onclick = sorterListe;
+	document.getElementById("div1").innerHTML = "";
 	for (i=0; i<fagListe.length; i++) {
-		console.log(fagListe[i]);	
-	}
-
+		document.getElementById("div1").innerHTML += `${fagListe[i]} <br>`;	
+    }
 }
 
 // lista med skolefag
@@ -25,48 +24,45 @@ let fagListe = [
 	"Fransk 1"
 ]
 
+for (i in fagListe) {
+	let option = document.createElement("option");
+	option.innerHTML = fagListe[i];
+	document.getElementById("select").appendChild(option);
+}
+
 // traverserer lista 'fagListe'
 function skrivUtListe() {
-	console.clear();
+	document.getElementById("div1").innerHTML = "";
 	for (i=0; i<fagListe.length; i++) {
-		console.log(fagListe[i]);	
+		document.getElementById("div1").innerHTML += `${fagListe[i]} <br>`;	
 	}
 }
 
 // traverserer lista 'fagListe' i omvendt rekkefølge
 function reverserListe() {
-	console.clear();
 	fagListe.reverse();
-	for (i=0; i<fagListe.length; i++) {
-		console.log(fagListe[i]);	
-	}
+	skrivUtListe();
 }
 
 // traverserer lista 'fagListe' i alfabetisk rekkefølge
 function sorterListe() {
-	console.clear();
 	fagListe.sort();
-	for (i=0; i<fagListe.length; i++) {
-		console.log(fagListe[i]);
-	}
+	skrivUtListe();
 }
 
 // legger til et nytt element i lista og traverserer lista
 function puttIListe() {
-	console.clear();
 	let nyVerdi = document.getElementById("teksBoks1").value;
-	fagListe.push(nyVerdi);
-	document.getElementById("teksBoks1").value = '';
-	for (i=0; i<fagListe.length; i++) {
-		console.log(fagListe[i]);
-		
+	if (nyVerdi != '') {
+		fagListe.push(nyVerdi);
+	} else {
+		alert("Du må skrive inn en verdi");
 	}
+	document.getElementById("teksBoks1").value = '';
+	skrivUtListe();
 }
 // fjerner det siste elementet i lista og traverserer lista
 function fjernFraListe() {
-	console.clear();
 	fagListe.pop();
-	for (i=0; i<fagListe.length; i++) {
-		console.log(fagListe[i]);
-	}
+	skrivUtListe();
 }

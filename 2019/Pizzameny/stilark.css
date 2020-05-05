@@ -1,0 +1,180 @@
+/*  Kode hentet fra Informasjonsteknologi 2, Aschehoug Undervisning 
+	Modifisert av Håvard Solberg Nybøe  */
+
+body {
+  background-image: url("pizza.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 0 #000;
+  font-size: 50px;
+}
+
+/* klasse til div element */
+.innpakning {
+  text-align: center;
+  background-image: url("meny.jpg");
+  width: 242px;
+  height: 295px;
+  margin: auto;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  padding: 20px;
+  padding-top: 60px;
+}
+
+.kvittering {
+  margin: auto;
+  width: fit-content;
+  height: auto;
+  background-color: white;
+  font-family: 'Share Tech Mono', monospace;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 6px;
+  line-height: 22px;
+  padding: 10px;
+  padding-top: 15px;
+}
+
+.kvittering th.varer {
+  width: 200px;
+  text-align: left;
+}
+.kvittering th.ant {
+  width: 40px;
+}
+
+.kvittering th.pris {
+  width: 110px;
+  text-align: right;
+}
+
+.kvittering td#varer {
+  text-align: left;
+}
+
+.kvittering td#ant {
+  text-align: center;
+}
+
+.kvittering td#pris, td#prisUtenMva, td#prisInklMva {
+  text-align: right;
+}
+
+.meny {
+  margin: auto;
+  text-align: left;
+  font-size: 17px;
+  width: 240px;
+  border-collapse: separate;
+  color: white;
+  line-height: 23px;
+}
+
+.meny th {
+  text-shadow: 2px 2px 0 #000;
+}
+
+.meny .menyPris {
+  text-align: right;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1.5px dotted rgba(255, 255, 255, 0.5);
+}
+  
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px 10px 5px 10px;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50px;
+  margin-left: -60px;
+}
+ 
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 25%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent rgba(0, 0, 0, 0.9);
+}
+
+.tooltip:hover {
+  border-bottom: 1.5px solid white;
+  cursor: default;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/*  Først angir vi for input, textarea og select:
+ *  kantlinje, skygge, skriftfarge, */
+input[type="text"], 
+input[type="number"], 
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  font-family: inherit; /* arver nettsidens skrifttype */
+  color: #666666; /* mørk grå tekstfarge */
+  border: 1px solid rgba(0,0,0,0.1); /* lys grå kantlinje */
+  border-radius: 4px; /* avrundet kantlinje */
+  padding: 5px; /* luft inni tekstboksene */
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.6); /* skygge på tekstboksene */
+  box-sizing: border-box; /* teller med kantlinjen i bredden */
+  margin-top: 2px; /* litt mellomrom til elementet ovenfor */
+  margin-bottom: 10px; /* litt mellomrom til elementet nedenfor */
+  width: 156px;
+  height: 30px;
+  font-size: 15.5px;
+}
+
+/* tekstboks, nummerboks, emailboks, passordboks, select-tag, textarea-tag  */ 
+input[type="text"],
+input[type="email"],
+input[type="password"], 
+textarea
+{
+  min-width: 130px; /* aldri smalere enn 130 px */
+}
+
+/* knapper */
+input[type="button"], button {
+  font-family: inherit;
+  padding: 5px; /* luft inni knappen */
+  color: #666666; /* sort tekstfarge */
+  border: 1px solid rgba(120, 120, 120, 0.4); /* lys grå kantlinje */
+  border-radius: 4px; /* avrunder kantene */
+  background-color: white; /* grå bakgrunnsfarge */
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.6); /* skygge bak knappen */
+  outline: none; /* fjerne ekstra kantlinje */
+  cursor: pointer; /* gjør om musepekeren til en hånd */
+  font-size: 15.5px;
+}
+
+input[type="button"]:hover, button:hover {
+  border: 1px solid #5196db;
+}
+
+input[type="button"]:active, button:active {
+  transform: translate(1px, 1px); /* 1 px til høyre og 1 px ned */
+}

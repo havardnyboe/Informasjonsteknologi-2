@@ -1,0 +1,1 @@
+TweenMax.to('#vindmolle', 2, {rotation:'+=360', repeat:-1, ease:Linear.easeNone})

@@ -1,0 +1,45 @@
+/*  Kode hentet fra Informasjonsteknologi 2, Aschehoug Undervisning 
+	Modifisert av Håvard Solberg Nybøe  */
+* {
+  margin: 0;
+  padding: 0;
+}
+    
+body {
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60px;
+}
+
+#heading {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 21%;
+  transform: translate(-50%, -21%);
+  width: fit-content;
+  height: fit-content;
+  padding: 20px;
+  border-radius: 25px;
+  line-height: 60px;
+  background-color: rgba(255, 255, 255, 0.91);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+#head1 {
+  position: relative;
+  color: #7ACAC6;
+}
+
+#head2 {
+  position: relative;
+  color: #FF4E80;
+  letter-spacing: 3px;
+  font-weight: bolder;
+}
+
+.sirkel {
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.5;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stilark.css">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <title>Pizzameny</title>
+</head>
+
+<body>
+    <h1>Pizzameny</h1>
+    <div class="innpakning">
+        <table class="meny" id="meny">
+            <tr>
+                <th>Varer</th>
+                <th class="menyPris">Pris</th>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <center>
+        <select id="pizza">
+            <option value="" disabled selected>Velg pizza</option>
+        </select>
+        <select id="pizzaAnt" style="width: 50px;">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <button id="bestillPizza" style="width: 80px; height: 30px;">Bestill</button>
+        <button id="fjernPizza" style="width: 60px; height: 30px;">Fjern</button>
+        <br>
+        <select id="drikke">
+            <option value="" disabled selected>Velg drikke</option>
+        </select>
+        <select id="drikkeAnt" style="width: 50px;">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <button id="bestillDrikke" style="width: 80px; height: 30px;">Bestill</button>
+        <button id="fjernDrikke" style="width: 60px; height: 30px;">Fjern</button>
+    </center><br>
+    <span id="kvittering"></span>
+    <br><br><br><br>
+</body>
+<script src="script.js"></script>
+
+</html>
