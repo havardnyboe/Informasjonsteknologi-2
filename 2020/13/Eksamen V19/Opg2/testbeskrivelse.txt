@@ -1,0 +1,12 @@
+Testbeskrivelse:
+
+Programmet er laget for å finne høyden og bredden på et bilde,
+og finne ut om det er et liggende, stående eller kvadratisk bilde.
+
+Programmet skal:
+	- Finne høyden og bredden 
+	- Sammenlikne høyden og bredden:
+		- Hvis bredden er større enn 1920px: Vis meldingen: "Kan ikke ha bredde større enn 1920 piksler"
+		- Hvis høyden er lik bredden: Vis ant. piksler og megapiksler, vis kvadrat
+		- Hvis høyden er større enn bredden: Vis ant. piksler og megapiksler, vis stående rektangel
+		- Hvis høyden er mindre enn bredden: Vis ant. piksler og megapiksler, vis liggende rektangel
