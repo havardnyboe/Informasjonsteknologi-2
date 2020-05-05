@@ -1,0 +1,20 @@
+body {
+    overflow: hidden;
+}
+
+button {
+    width: 200px;
+    height: 70px;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+
+
+.odometer {
+    width: 230px;
+    font-size: 5.5rem;
+}
+
+.pott {
+    font-size: 3.5rem;
+}

@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    font-family: "Century Gothic", Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.bakgrunn {
+    border: 1px solid white;
+    background: white;
+    width: 600px;
+    height: calc(100vh - 2px);
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.innpakning {
+    text-align: left;
+    width: 300px;
+    margin: auto;
+}
+
+input[type="radio"] {
+    position: relative;
+    left: 15px;
+}
+
+span {
+    position: relative;
+    left: 18px;
+}
+
+input[type="button"],
+button {
+    font-family: inherit;
+    padding: 8px;
+    color: black;
+    border: 1px solid rgba(120, 120, 120, 0.4);
+    border-radius: 4px;
+    background-color: #e7e7e7;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+    outline: none;
+    cursor: pointer;
+}
+
+input[type="button"]:hover,
+button:hover {
+    border: 1px solid #5196db;
+}
+
+input[type="button"]:active,
+button:active {
+    transform: translate(1px, 1px);
+}

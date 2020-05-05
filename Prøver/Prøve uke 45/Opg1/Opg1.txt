@@ -1,0 +1,10 @@
+a)
+linje 1: Deklarerer funksjonen
+linje 2: Sorterer lista etter stigende rekkefølge
+linje 3: Deklarerer og tilordner variabelen "midt" halvparten av lengden til lista
+linje 4: Hvis antall elementer i lista (lengden på lista) ikke er delelig på to (ikke gir null i rest)
+linje 5: Skriv ut i konsollen: nummeret før "midt" i lista + "midt" delt på to
+linje 6: Ellers skriv ut i konsollen: nummeret "midt"
+
+b)
+Funksjonen sorterer lista i stigende rekkefølge og finner medianen

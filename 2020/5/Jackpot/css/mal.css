@@ -1,0 +1,64 @@
+body {
+    background-color: whitesmoke;
+    font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.innpakning {
+    text-align: center;
+    /* width: 500px; */
+    ;
+    margin: auto;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    font-family: inherit;
+    color: #666;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    min-width: 130px;
+}
+
+input[type="button"],
+button {
+    font-family: inherit;
+    padding: 8px;
+    color: black;
+    border: 1px solid rgba(120, 120, 120, 0.4);
+    border-radius: 4px;
+    background-color: #e7e7e7;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+    outline: none;
+    cursor: pointer;
+}
+
+input[type="button"]:hover,
+button:hover {
+    border: 1px solid #5196db;
+}
+
+input[type="button"]:active,
+button:active {
+    transform: translate(1px, 1px);
+}
