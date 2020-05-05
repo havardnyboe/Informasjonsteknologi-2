@@ -1,0 +1,11 @@
+Hva skal lages:
+
+	- En applikasjon som oppfordrer bilister med høy fart til å senke farten
+	
+	
+Funksjonelle krav:
+
+	- Bilde/animasjon med en veg og en bil
+	- Input-felt hvor fart kan registreres
+	- Output-felt hvor teksten "Senk farten" kommer hvis bilisten har for høy fart
+	- Lyd som spilles av etter at farten har blitt registrert
