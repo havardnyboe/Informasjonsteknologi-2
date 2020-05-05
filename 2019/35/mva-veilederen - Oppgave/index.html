@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Merverdiavgift</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="midstilt">
+    <h1>Merverdiavgift</h1>
+    <h3>Skriv inn beløp og trykk på en av <br> knappene for å beregne Mva</h3>
+    <input type="text" id="tekstboks1" placeholder="Skriv inn beløp" class="tekstboks" onkeypress="validate(event)">
+    <br><input type="button" value="Generell" onclick="generellMva()">
+    <input type="button" value="Mat" onclick="matMva()">
+    <input type="button" value="Transport" onclick="transportMva()">
+    <br><br>
+    Inkl. Mva:
+        <div id="div1"></div>
+        <br> Eksl. Mva:
+        <div id="div2"></div>
+        <br> Mva:
+        <div id="div3"></div>
+        <br> Mva %:
+        <div id="div4"></div>
+    <p>Grenerell: For varer som ikke er mat eller transport
+        <br>Mat: For alle typer matvarer
+        <br>Transport: For alle typer transkport som f.eks. buss og tog
+    </p>
+    </div>
+</body>
+
+</html>
