@@ -1,0 +1,25 @@
+Innledning:
+
+Målgruppen er menn og kvinner som ønsker å få fremtiden spådd av en gammel spåkone.
+
+
+Hensikten med programmet:
+
+Hensikten med programmet er å svindle uvitne menn og kvinner som er i en hemmet 
+livsituasjon og trenger hjelp til hva som helst. 
+
+
+Ikke-funksjonele krav:
+
+    - Programmet trenger internettilgang for å gjøre dype og 
+      kompliserte beregninger basert på brukerens tilstand
+    - Ingen bruker data bli lagret og programmet kan derfor trygt 
+      brukes av alle
+
+Funksjonelle krav:
+
+    - Radioknapper til valg av kjønn
+    - Inntastingfelt til alder
+    - Inntastingfelt til høyde
+    - Knapp for å regne ut spådommen 
+    - Output felt for spådommen
