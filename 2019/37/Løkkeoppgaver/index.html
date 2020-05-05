@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Løkkeoppgaver</title>
+	<style>
+		body {
+			background-color: whitesmoke;
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+			text-align: center;
+		}
+
+		.div1 {
+			text-align: left;
+			padding-left: 30%;
+			padding-right: 30%;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Løkkeoppgaver</h1>
+	<div class="div1">
+
+		<!-- Oppgave 1 -->
+		<h3><u>To siffer</u></h3>
+		<p>a) Skriv ut alle tosifrede kombinasjoner av tallene 1, 2, 3, 4 og 5 slik som 11, 12, 13, 14, 15, 21, 22 osv.
+		<br> Et tips vil være å bruke nestede løkker, som begge løper over intervallet. </p>
+		<div id="div1"><b>Løsning: <br></b></div>
+
+		<p>b) Legg til nok en nestet løkke med samme intervall, og skriv ut alle tresifrede kombinasjoner.</p>
+		<p><b>Løsning:</b></p>
+		<div id="div2"></div><br>
+
+		<!-- Oppgave 2 -->
+		<h3><u>Hvor mye penger har du i banken?</u></h3>
+		<input type="number" id="txtBox1" placeholder="Sum penger i banken:"><br>
+		<input type="number" id="txtBox2" placeholder="Antall år:"><br>
+		<input type="number" id="txtBox3" placeholder="Rente:"><br>
+		<input type="button" id="knapp1" value="Regn ut" onclick="regnUtKnapp()" onkeypress="">
+		<div id="div3"></div><br>
+
+		<!-- Oppgave 3 -->
+		<h3><u>Vis bilder</u></h3>
+		<p>Lag/finn 10 bildefiler navngitt bilde1.jpg, bilde2.jpg, bilde3.jpg osv, og plasser disse filene i prosjektmappa. <br> La så brukeren skrive enn et fra-nummer og et til-nummer i to tekstbokser, og vis de valgte bildene når en knapp trykkes. <br><u>TIPS:</u> Benytt her en for-løkke til å legge til <img>-tagger i dokumentet.</p>
+		
+		<input type="number" placeholder="Fra-nummer" id="txtBox4">
+		<input type="number" placeholder="Til-nummer" id="txtBox5">
+		<input type="button" value="Vis bilder" onclick="visBildeKnapp()"><br><br>
+		<div id="div4"></div>
+
+		<br><br><br><br><br><br>
+	</div>
+</body>
+<script src="script.js"></script>
+
+</html>
