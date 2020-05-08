@@ -1,2 +1,2 @@
-# Informasjonsteknologi2_19-20
+# Informasjonsteknologi 2
 Oppgaver og prøver fra IT2
